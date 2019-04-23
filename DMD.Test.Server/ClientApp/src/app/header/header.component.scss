@@ -1,0 +1,43 @@
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    background-color: rgb(22, 22, 22);
+    color: gray;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.page-title{
+    color: white;
+}
+
+.tabs {
+    background-color: rgb(22, 22, 22);
+    color: gray;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.tab.active {
+    border-bottom: 1px solid #d00;
+}
+
+a {
+    color: gray;
+    text-decoration: none; 
+}
+
+a.active {
+    color: white;
+}

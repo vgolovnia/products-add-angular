@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DMD.Test.Models\DMD.Test.Models.csproj" />
+    <ProjectReference Include="..\DMD.Test.Repositories\DMD.Test.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

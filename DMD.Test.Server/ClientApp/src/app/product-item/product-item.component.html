@@ -1,0 +1,22 @@
+<div class="fixed-menu">
+  <div class="filter">
+      <div class="filter-element"><a routerLink="/products/all">ALL</a></div>
+      <div *ngFor="let category of categories" class="filter-element"><a routerLink="/products/{{category.name.toLowerCase()}}" routerLinkActive="active">{{category.name}}</a></div>
+      <div class="filter-element"><a routerLink="/product/0" routerLinkActive="active">Add new product</a></div>
+  </div>
+</div>
+<div class="content">
+  <br />
+  <br />
+  <p>
+    Add new product
+  </p>
+  Name:
+  <input [(ngModel)]="product.name">
+  Type:
+  <select [(ngModel)]="product.category">
+      <option *ngFor="let c of categories" [ngValue]="c">{{c.name}}</option>
+    </select>
+    <br />
+    <button (click)="add($event)">Add</button>
+</div>

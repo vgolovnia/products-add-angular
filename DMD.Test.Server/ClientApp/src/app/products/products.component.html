@@ -1,0 +1,19 @@
+<div class="fixed-menu">
+    <div class="filter">
+        <div class="filter-element"><a routerLink="/products/all" routerLinkActive="active">ALL</a></div>
+        <div *ngFor="let category of categories" class="filter-element"><a routerLink="/products/{{category.name.toLowerCase()}}" routerLinkActive="active">{{category.name}}</a></div>
+        <div class="filter-element"><a routerLink="/product/0">Add new product</a></div>
+    </div>
+</div>
+<div class="content">
+  <div class="list">
+    <div *ngFor="let asset of assets" class="item"> 
+      <div class="item-left">
+        <div class="item-category">{{asset.category.name}}</div>
+        <div class="item-title">{{asset.name}}</div>
+        <div class="item-saving"></div>
+      </div>
+      <div class="item-right"></div>
+    </div>
+  </div>
+</div>
